@@ -1,0 +1,13 @@
+D:\projects\RocketLeagueBumper\bin\AnyCPU\Release\netcoreapp3.1\RocketLeagueBumper.exe
+D:\projects\RocketLeagueBumper\bin\AnyCPU\Release\netcoreapp3.1\RocketLeagueBumper.deps.json
+D:\projects\RocketLeagueBumper\bin\AnyCPU\Release\netcoreapp3.1\RocketLeagueBumper.runtimeconfig.json
+D:\projects\RocketLeagueBumper\bin\AnyCPU\Release\netcoreapp3.1\RocketLeagueBumper.runtimeconfig.dev.json
+D:\projects\RocketLeagueBumper\bin\AnyCPU\Release\netcoreapp3.1\RocketLeagueBumper.dll
+D:\projects\RocketLeagueBumper\bin\AnyCPU\Release\netcoreapp3.1\RocketLeagueBumper.pdb
+D:\projects\RocketLeagueBumper\RocketLeagueBumper\obj\Release\netcoreapp3.1\RocketLeagueBumper.csprojAssemblyReference.cache
+D:\projects\RocketLeagueBumper\RocketLeagueBumper\obj\Release\netcoreapp3.1\RocketLeagueBumper.AssemblyInfoInputs.cache
+D:\projects\RocketLeagueBumper\RocketLeagueBumper\obj\Release\netcoreapp3.1\RocketLeagueBumper.AssemblyInfo.cs
+D:\projects\RocketLeagueBumper\RocketLeagueBumper\obj\Release\netcoreapp3.1\RocketLeagueBumper.csproj.CoreCompileInputs.cache
+D:\projects\RocketLeagueBumper\RocketLeagueBumper\obj\Release\netcoreapp3.1\RocketLeagueBumper.dll
+D:\projects\RocketLeagueBumper\RocketLeagueBumper\obj\Release\netcoreapp3.1\RocketLeagueBumper.pdb
+D:\projects\RocketLeagueBumper\RocketLeagueBumper\obj\Release\netcoreapp3.1\RocketLeagueBumper.genruntimeconfig.cache
