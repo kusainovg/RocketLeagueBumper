@@ -38,19 +38,23 @@ namespace RocketLeagueBumper
             {
                 List<IWebElement> chrElements = chrDriver.FindElementsByXPath("//button[@class='rlg-trade__action rlg-trade__bump ']").ToList();
 
-                Console.WriteLine(chrElements.Count);
+                Console.WriteLine("Number of trades: " + chrElements.Count);
 
                 foreach(var item in chrElements)
                 {
+                    if (chrDriver.FindElementByXPath("//i[@class='fa fa-times']").Displayed)
+                        chrDriver.FindElementByXPath("//i[@class='fa fa-times']").Click();
+
                     item.Click();
 
                     System.Threading.Thread.Sleep(1000 + random.Next(1, 50));
 
-                    chrDriver.FindElementByXPath("//i[@class='fa fa-times']").Click();
+                    if (chrDriver.FindElementByXPath("//i[@class='fa fa-times']").Displayed)
+                        chrDriver.FindElementByXPath("//i[@class='fa fa-times']").Click();
 
                     System.Threading.Thread.Sleep(3000 + random.Next(1, 1000));
                 }
-                
+                Console.WriteLine("Waiting 15 min");
                 System.Threading.Thread.Sleep(900000 + random.Next(1, 30000));
             }
         }
