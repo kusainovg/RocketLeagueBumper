@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "WMaqRB5WFoFiWlSzLdOF3MGRKstRPTZuaV14iaGOrkQo7OIDlONLtE/9tKjgpo8JulnVSX1fihbY6sEkbjXywA==",
+  "dgSpecHash": "PAK4M6DmX7BbH3GdnAmYxAqbgFhfq0Y2ti/SjaFfRP+s2zIx5KswvVeVAmeB8Fw2J6283xkOJzm8awItF+biUA==",
   "success": true,
   "projectFilePath": "D:\\projects\\RocketLeagueBumper\\RocketLeagueBumper\\RocketLeagueBumper.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Гамзат\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\Гамзат\\.nuget\\packages\\selenium.webdriver\\3.141.0\\selenium.webdriver.3.141.0.nupkg.sha512"
+  ],
   "logs": []
 }
