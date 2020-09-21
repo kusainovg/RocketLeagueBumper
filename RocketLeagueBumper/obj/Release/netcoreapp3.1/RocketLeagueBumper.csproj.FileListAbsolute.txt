@@ -11,3 +11,4 @@ D:\projects\RocketLeagueBumper\RocketLeagueBumper\obj\Release\netcoreapp3.1\Rock
 D:\projects\RocketLeagueBumper\RocketLeagueBumper\obj\Release\netcoreapp3.1\RocketLeagueBumper.pdb
 D:\projects\RocketLeagueBumper\RocketLeagueBumper\obj\Release\netcoreapp3.1\RocketLeagueBumper.genruntimeconfig.cache
 D:\projects\RocketLeagueBumper\RocketLeagueBumper\obj\Release\netcoreapp3.1\RocketLeagueBumper.csproj.CopyComplete
+D:\projects\RocketLeagueBumper\RocketLeagueBumper\obj\Release\netcoreapp3.1\RocketLeagueBumper.csproj.CoreCompileInputs.cache
