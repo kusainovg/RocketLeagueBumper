@@ -7,8 +7,8 @@ D:\projects\RocketLeagueBumper\bin\AnyCPU\Debug\netcoreapp3.1\RocketLeagueBumper
 D:\projects\RocketLeagueBumper\RocketLeagueBumper\obj\Debug\netcoreapp3.1\RocketLeagueBumper.csprojAssemblyReference.cache
 D:\projects\RocketLeagueBumper\RocketLeagueBumper\obj\Debug\netcoreapp3.1\RocketLeagueBumper.AssemblyInfoInputs.cache
 D:\projects\RocketLeagueBumper\RocketLeagueBumper\obj\Debug\netcoreapp3.1\RocketLeagueBumper.AssemblyInfo.cs
-D:\projects\RocketLeagueBumper\RocketLeagueBumper\obj\Debug\netcoreapp3.1\RocketLeagueBumper.csproj.CoreCompileInputs.cache
 D:\projects\RocketLeagueBumper\RocketLeagueBumper\obj\Debug\netcoreapp3.1\RocketLeagueBumper.csproj.CopyComplete
 D:\projects\RocketLeagueBumper\RocketLeagueBumper\obj\Debug\netcoreapp3.1\RocketLeagueBumper.dll
 D:\projects\RocketLeagueBumper\RocketLeagueBumper\obj\Debug\netcoreapp3.1\RocketLeagueBumper.pdb
 D:\projects\RocketLeagueBumper\RocketLeagueBumper\obj\Debug\netcoreapp3.1\RocketLeagueBumper.genruntimeconfig.cache
+D:\projects\RocketLeagueBumper\RocketLeagueBumper\obj\Debug\netcoreapp3.1\RocketLeagueBumper.csproj.CoreCompileInputs.cache

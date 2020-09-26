@@ -4,7 +4,11 @@ using System.Collections.Generic;
 using Newtonsoft.Json;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Support.UI;
 using System.Linq;
+using OpenQA.Selenium.Interactions;
+using System.Linq.Expressions;
+using System.Threading.Tasks;
 
 namespace RocketLeagueBumper
 {
@@ -30,30 +34,47 @@ namespace RocketLeagueBumper
 
             ChromeDriver chrDriver = new ChromeDriver(chrOptions);
 
-            chrDriver.Navigate().GoToUrl(settings.urlTrade);
-
             Random random = new Random();
 
-            while(true)
+            WebDriverWait wait = new WebDriverWait(chrDriver, TimeSpan.FromSeconds(5));
+
+            Actions actions = new Actions(chrDriver);
+
+            while (true)
             {
+                chrDriver.Navigate().GoToUrl(settings.urlTrade);
+
+                
+
+                if(chrDriver.FindElementByXPath("//i[@class='fa fa-times']").Displayed)
+                    wait.Until(x => x.FindElement(By.XPath("//i[@class='fa fa-times']"))).Click();
+
                 List<IWebElement> chrElements = chrDriver.FindElementsByXPath("//button[@class='rlg-trade__action rlg-trade__bump ']").ToList();
 
                 Console.WriteLine("Number of trades: " + chrElements.Count);
 
-                foreach(var item in chrElements)
+                LinkedList<string> list = new LinkedList<string>();
+
+                foreach(var element in chrElements)
                 {
-                    if (chrDriver.FindElementByXPath("//i[@class='fa fa-times']").Displayed)
-                        chrDriver.FindElementByXPath("//i[@class='fa fa-times']").Click();
-
-                    item.Click();
-
-                    System.Threading.Thread.Sleep(1000 + random.Next(1, 50));
-
-                    if (chrDriver.FindElementByXPath("//i[@class='fa fa-times']").Displayed)
-                        chrDriver.FindElementByXPath("//i[@class='fa fa-times']").Click();
-
-                    System.Threading.Thread.Sleep(3000 + random.Next(1, 1000));
+                    list.AddLast("https://rocket-league.com/trade/" + element.GetAttribute("data-alias"));
                 }
+
+                foreach(var item in list)
+                {
+                    Console.WriteLine(item);
+                }
+
+                foreach(var item in list)
+                {
+                    chrDriver.Navigate().GoToUrl(item);
+
+                    if (chrDriver.FindElementByXPath("//button[@class='rlg-trade__action rlg-trade__bump ']").Displayed)
+                        chrDriver.FindElementByXPath("//button[@class='rlg-trade__action rlg-trade__bump ']").Click();
+
+                    System.Threading.Thread.Sleep(3000);
+                }
+
                 Console.WriteLine("Waiting 15 min");
                 System.Threading.Thread.Sleep(900000 + random.Next(1, 30000));
             }
@@ -87,3 +108,38 @@ namespace RocketLeagueBumper
         }
     }
 }
+#region previous loop
+//while (true)
+//{
+//    chrDriver.Navigate().GoToUrl(settings.urlTrade);
+
+//    if (chrDriver.FindElementByXPath("//i[@class='fa fa-times']").Displayed)
+//        wait.Until(x => x.FindElement(By.XPath("//i[@class='fa fa-times']"))).Click();
+
+//    List<IWebElement> chrElements = chrDriver.FindElementsByXPath("//button[@class='rlg-trade__action rlg-trade__bump ']").ToList();
+
+//    Console.WriteLine("Number of trades: " + chrElements.Count);
+
+//    foreach (var item in chrElements)
+//    {
+//        if (chrDriver.FindElementByXPath("//i[@class='fa fa-times']").Displayed)
+//            chrDriver.FindElementByXPath("//i[@class='fa fa-times']").Click();
+
+//        actions.MoveToElement(item);
+
+//        wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementToBeClickable(item)).Click();
+
+
+//        System.Threading.Thread.Sleep(2000 + random.Next(1, 50));
+
+//        //wait.Until(x => x.FindElement(By.XPath("//i[@class='fa fa-times']"))).Click();
+
+//        if (chrDriver.FindElementByXPath("//i[@class='fa fa-times']").Displayed)
+//            chrDriver.FindElementByXPath("//i[@class='fa fa-times']").Click();
+
+//        System.Threading.Thread.Sleep(2000 + random.Next(1, 1000));
+//    }
+//    Console.WriteLine("Waiting 15 min");
+//    System.Threading.Thread.Sleep(1000000 + random.Next(1, 30000));
+//}
+#endregion
